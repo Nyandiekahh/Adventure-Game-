@@ -7,6 +7,8 @@ const GameModeSelection = ({ setScreen }) => {
   return (
     <div className="game-mode-selection">
       <h2>Select Your Game Mode</h2>
+      
+      {/* Cards for game mode selection */}
       <div className="cards-container">
         <div className="card" onClick={() => setScreen('singlePlayer')}>
           <FontAwesomeIcon icon={faUser} size="4x" className="card-icon" />
@@ -18,6 +20,16 @@ const GameModeSelection = ({ setScreen }) => {
           <h3>Multiplayer</h3>
           <p>Play with friends or join other players in real-time!</p>
         </div>
+      </div>
+
+      {/* Buttons for game mode selection */}
+      <div className="buttons-container">
+        <button className="game-mode-button" onClick={() => setScreen('singlePlayer')}>
+          Start Single Player
+        </button>
+        <button className="game-mode-button" onClick={() => setScreen('multiplayer')}>
+          Start Multiplayer
+        </button>
       </div>
     </div>
   );

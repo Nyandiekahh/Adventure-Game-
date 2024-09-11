@@ -1,4 +1,4 @@
-#!/home/nyandieka/Aventure/Adventure-Game-/backend/venv/bin/python
+#!/home/nyandieka/ad/Adventure-Game-/backend/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

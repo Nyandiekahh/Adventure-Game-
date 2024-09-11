@@ -19,7 +19,8 @@ const Login = ({ setScreen }) => {
     );
 
     if (user) {
-      setScreen('gameMode');
+      // Redirect to Game Mode Selection after successful login
+      setScreen('gameModeSelection');
     } else {
       setErrorMessage('Invalid email or password');
     }

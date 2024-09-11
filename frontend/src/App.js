@@ -1,15 +1,19 @@
 // src/App.js
+
 import React, { useState, useEffect } from 'react';
 import WelcomeScreen from './components/WelcomeScreen';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import GameMode from './components/GameMode';
-import Settings from './components/Settings'; // Import Settings component
+import GameModeSelection from './components/GameModeSelection';
+import SinglePlayer from './components/SinglePlayer';
+import Multiplayer from './components/Multiplayer';
+import CharacterSelection from './components/CharacterSelection'; // Import the new component
+import Settings from './components/Settings';
 import './App.css';
 
 function App() {
-  const [screen, setScreen] = useState(localStorage.getItem('currentScreen') || 'welcome');
-  const [showSettings, setShowSettings] = useState(false); // State for Settings modal
+  const [screen, setScreen] = useState('welcome');
+  const [showSettings, setShowSettings] = useState(false);
 
   useEffect(() => {
     localStorage.setItem('currentScreen', screen);
@@ -24,8 +28,14 @@ function App() {
         return <Login setScreen={setScreen} />;
       case 'signup':
         return <Signup setScreen={setScreen} />;
-      case 'gameMode':
-        return <GameMode setScreen={setScreen} />;
+      case 'gameModeSelection':
+        return <GameModeSelection setScreen={setScreen} />;
+      case 'singlePlayer':
+        return <SinglePlayer setScreen={setScreen} />; // Pass setScreen to SinglePlayer
+      case 'multiplayer':
+        return <Multiplayer setScreen={setScreen} />; // Pass setScreen to Multiplayer
+      case 'characterSelection':
+        return <CharacterSelection setScreen={setScreen} />;
       case 'welcome':
       default:
         return <WelcomeScreen setScreen={setScreen} />;
@@ -35,8 +45,8 @@ function App() {
   return (
     <div className="App">
       {renderScreen()}
-      {showSettings && <Settings closeSettings={handleSettingsClose} />} {/* Display Settings modal */}
-      <button className="settings-button" onClick={handleSettingsOpen}>Settings</button> {/* Button to open Settings */}
+      {showSettings && <Settings closeSettings={handleSettingsClose} />}
+      <button className="settings-button" onClick={handleSettingsOpen}>Settings</button>
     </div>
   );
 }
