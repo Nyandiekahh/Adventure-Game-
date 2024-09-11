@@ -20,7 +20,7 @@ const WelcomeScreen = () => {
       default:
         return (
           <div className="welcome-container">
-            <h1>Welcome to the Game!</h1>
+            <h1>Welcome to the Maandamano Quest!</h1>
             <p>Start your adventure today!</p>
             <div className="button-group">
               <button className="btn" onClick={() => setScreen('login')}>Login</button>

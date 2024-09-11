@@ -1,5 +1,29 @@
 /* src/App.css */
 
-.app-container {
-  font-family: 'Arial', sans-serif;
+/* Button styling */
+.settings-button {
+  position: fixed;
+  bottom: 20px; /* Position it at the bottom of the screen */
+  right: 20px; /* Align it to the right side */
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px; /* Rounded button */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000; /* Ensure the button is above other content */
+}
+
+/* Button hover effect */
+.settings-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Button focus effect for accessibility */
+.settings-button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
 }

@@ -1,0 +1,49 @@
+/* src/components/Settings.css */
+
+.settings-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .settings-container {
+    background: #29293d;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+  }
+  
+  .settings-option {
+    margin-bottom: 15px;
+  }
+  
+  .settings-option label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .settings-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .settings-buttons button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .settings-buttons button:hover {
+    background: #0056b3;
+  }
+  
