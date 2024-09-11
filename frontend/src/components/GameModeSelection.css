@@ -1,0 +1,45 @@
+/* src/components/GameModeSelection.css */
+
+.game-mode-selection {
+    text-align: center;
+    padding: 50px;
+    background-color: #29293d; /* Background color specific to this screen */
+    color: white;
+    min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+  }
+  
+  .card {
+    width: 250px;
+    padding: 20px;
+    background-color: #1e1e2e; /* Background color for the card */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-icon {
+    color: #007bff; /* Icon color */
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
