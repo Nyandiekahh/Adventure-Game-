@@ -1,28 +1,35 @@
-/* src/components/SinglePlayer.css */
+/* Apply background color to the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2e;
+  color: white;
+}
 
+/* src/components/SinglePlayer.css */
 .single-player {
-    padding: 20px;
-  }
-  
-  .character-list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .character-card {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
-    width: 200px;
-  }
-  
-  .character-card:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .character-details {
-    margin-top: 20px;
-  }
-  
+  padding: 20px;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.character-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  width: 200px;
+  background-color: #2a2a3a; /* Slightly lighter background for cards */
+}
+
+.character-card:hover {
+  background-color: #3a3a4a; /* Darker background on hover for contrast */
+}
+
+.character-details {
+  margin-top: 20px;
+}

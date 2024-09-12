@@ -6,8 +6,8 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import GameModeSelection from './components/GameModeSelection';
 import SinglePlayer from './components/SinglePlayer';
-import Multiplayer from './components/Multiplayer';
-import CharacterSelection from './components/CharacterSelection'; // Import the new component
+import MultiplayerSearch from './components/MultiplayerSearch'; // Import the search component
+import CharacterSelection from './components/CharacterSelection';
 import Settings from './components/Settings';
 import './App.css';
 
@@ -31,9 +31,9 @@ function App() {
       case 'gameModeSelection':
         return <GameModeSelection setScreen={setScreen} />;
       case 'singlePlayer':
-        return <SinglePlayer setScreen={setScreen} />; // Pass setScreen to SinglePlayer
+        return <SinglePlayer setScreen={setScreen} />;
       case 'multiplayer':
-        return <Multiplayer setScreen={setScreen} />; // Pass setScreen to Multiplayer
+        return <MultiplayerSearch setScreen={setScreen} />; // New multiplayer search
       case 'characterSelection':
         return <CharacterSelection setScreen={setScreen} />;
       case 'welcome':

@@ -1,0 +1,29 @@
+/* src/components/MultiplayerSearch.css */
+
+.multiplayer-search-container {
+    padding: 20px;
+    background-color: #1e1e2e;
+    color: white;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .search-results {
+    margin-top: 20px;
+  }
+  
+  .player-item {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #333;
+    cursor: pointer;
+  }
+  
+  .player-item:hover {
+    background-color: #555;
+  }
+  

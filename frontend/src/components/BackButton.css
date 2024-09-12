@@ -1,0 +1,20 @@
+/* src/components/BackButton.css */
+
+.back-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    position: fixed; /* Position the button fixed to stay visible on all screens */
+    top: 20px; /* Adjust positioning as needed */
+    left: 20px; /* Adjust positioning as needed */
+    z-index: 1000; /* Ensure the button appears above other elements */
+  }
+  
+  .back-button:hover {
+    background-color: #ff7845;
+  }
+  

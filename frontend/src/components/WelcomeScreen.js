@@ -12,7 +12,7 @@ const WelcomeScreen = ({ setScreen }) => { // Use setScreen from props
       <div className="button-group">
         <button className="btn" onClick={() => setScreen('login')}>Login</button>
         <button className="btn" onClick={() => setScreen('signup')}>Sign Up</button>
-        <button className="btn" onClick={() => setScreen('gameModeSelection')}>Game Mode</button> {/* Navigate to GameModeSelection */}
+        {/* <button className="btn" onClick={() => setScreen('gameModeSelection')}>Game Mode</button> Navigate to GameModeSelection */}
       </div>
     </div>
   );
